@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/layoutBackgroundLight" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shipping_methods_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/save_shipping_method_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

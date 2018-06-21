@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1095851001375",
+    "firebase_url": "https://shesellerbeta.firebaseio.com",
+    "project_id": "shesellerbeta",
+    "storage_bucket": "shesellerbeta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095851001375:android:372be0522e4e4ddd",
+        "android_client_info": {
+          "package_name": "com.sheseller.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095851001375-egpgnhdu2j565a9hrj9j9qplntv4tija.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sheseller.beta",
+            "certificate_hash": "4bc7d9fba60a528d39635c808b84eb8adffb7730"
+          }
+        },
+        {
+          "client_id": "1095851001375-5euqatb47lu4hfp3v3mufqj6dgo40lqu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1095851001375-5euqatb47lu4hfp3v3mufqj6dgo40lqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZBlCzkRRXfhq_oZcZbQs2i9de7pbMn3w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095851001375-5euqatb47lu4hfp3v3mufqj6dgo40lqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

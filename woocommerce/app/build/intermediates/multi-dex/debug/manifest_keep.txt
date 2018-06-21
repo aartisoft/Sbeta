@@ -1,0 +1,3 @@
+# Referenced at C:\Users\parveen\Desktop\apps\beta\woocommerce\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:60
+-keep class com.vectorcoder.androidwoocommerce.app.App { <init>(...); }
+

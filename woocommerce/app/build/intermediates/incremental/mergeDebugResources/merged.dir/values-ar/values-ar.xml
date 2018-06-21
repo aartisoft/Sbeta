@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="sortBy_array">
+        <item> ا - ي </item>
+        <item> ي - ا </item>
+        <item> أحدث </item>
+    </string-array>
+    <string name="Featured"> متميز </string>
+    <string name="NEW"> الجديد </string>
+    <string name="Newest"> جديد </string>
+    <string name="Sale"> تخفيض السعر </string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"التنقل إلى الشاشة الرئيسية"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"خيارات إضافية"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"تم"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"إيقاف"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"تشغيل"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"بحث…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"محو طلب البحث"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"طلب البحث"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"بحث"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"البحث الصوتي"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"تصغير"</string>
+    <string name="account_updated">تم تحديث تفاصيل الحساب بنجاح.</string>
+    <string name="actionAbout"> حول </string>
+    <string name="actionAccount"> حسابي </string>
+    <string name="actionAddresses"> عناويني </string>
+    <string name="actionCart"> ماي كارت </string>
+    <string name="actionCategories"> الاقسام </string>
+    <string name="actionCategory"> الفئة </string>
+    <string name="actionContactUs"> اتصل بنا </string>
+    <string name="actionFavourites"> مفضلتي </string>
+    <string name="actionHome"> الصفحة الرئيسية </string>
+    <string name="actionIntro"> المقدمة </string>
+    <string name="actionLanguage"> لغة </string>
+    <string name="actionLogin"> تسجيل الدخول </string>
+    <string name="actionLogout"> الخروج </string>
+    <string name="actionNews"> أخبار </string>
+    <string name="actionOrders"> طلباتي </string>
+    <string name="actionRateApp"> معدل التطبيق </string>
+    <string name="actionSearch"> تفتيش </string>
+    <string name="actionSettings"> إعدادات </string>
+    <string name="actionShareApp"> شارك التطبيق </string>
+    <string name="actionShop"> متجر </string>
+    <string name="ad_interstitial"> إعلان بيني </string>
+    <string name="addToCart"> أضف إلى السلة </string>
+    <string name="add_coupon"> إضافة القسيمة؟ </string>
+    <string name="added_to_favourites"> تمت الإضافة إلى المفضلة </string>
+    <string name="additional_info">معلومات إضافية</string>
+    <string name="address"> عنوان </string>
+    <string name="address_1"> عنوان 1 </string>
+    <string name="address_2"> عنوان 2 </string>
+    <string name="all"> الكل </string>
+    <string name="already_have_account"> هل لديك حساب بالفعل؟ </string>
+    <string name="and"> و </string>
+    <string name="app_intro_done_button">إنهاء</string>
+    <string name="app_intro_skip_button">تخطي</string>
+    <string name="app_terms_services"> إنشاء حساب يعني أنك بخير مع شركائنا </string>
+    <string name="apply"> تطبيق </string>
+    <string name="attribute_name"> اسم السمة </string>
+    <string name="billing_address"> عنوان وصول الفواتير </string>
+    <string name="cancel"> إلغاء </string>
+    <string name="cancel_order"> الغاء الطلب </string>
+    <string name="categories"> الاقسام </string>
+    <string name="category"> الفئة </string>
+    <string name="categoryStyle1"> الفئة 1 </string>
+    <string name="categoryStyle2"> الفئة 2 </string>
+    <string name="categoryStyle3"> الفئة 3 </string>
+    <string name="categoryStyle4"> الفئة 4 </string>
+    <string name="categoryStyle5"> الفئة 5 </string>
+    <string name="categoryStyle6"> الفئة 6 </string>
+    <string name="checkout"> الدفع </string>
+    <string name="checkout_price"> سعر الطلب </string>
+    <string name="choose_option">إختر خيارا</string>
+    <string name="city"> مدينة </string>
+    <string name="clear"> إعادة تعيين </string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">تفضل بزيارة &lt;b>facebook.com/device&lt;/b> وإدخال الرمز الموضح أعلاه.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">حدث خطأ غير متوقع أثناء تنزيل صورة.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">يتطلب تسجيل دخول WebView الحصول إلى إذن INTERNET</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">خطأ AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">أعجبك</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">أعجبني</string>
+    <string gender="unknown" name="com_facebook_loading">جارٍ التحميل…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">إلغاء</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">تسجيل الدخول</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">متابعة بحساب فيسبوك</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">تسجيل الدخول بحساب فيسبوك</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">تسجيل الخروج</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">تسجيل الخروج</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">تم تسجيل الدخول باسم: %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">تم تسجيل الدخول باستخدام حساب فيسبوك</string>
+    <string gender="unknown" name="com_facebook_send_button_text">إرسال</string>
+    <string gender="unknown" name="com_facebook_share_button_text">مشاركة</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">لربط حسابك، افتح تطبيق فيسبوك على جهازك المحمول وراجع الإشعارات.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- أو -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">لست أنت؟</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">متابعة باسم %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">تأكيد تسجيل الدخول</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">أنت المتحكم في الأمر - يمكنك اختيار المعلومات التي تود مشاركتها مع التطبيقات.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"تمكين"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"‏لن يعمل <ns1:g id="APP_NAME">%1$s</ns1:g> ما لم يتم تمكين خدمات Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"‏تمكين خدمات Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"تثبيت"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play، والتي لا تتوفر على جهازك."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"‏الحصول على خدمات Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"‏مدى توفّر خدمات Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"‏خطأ في خدمات Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"‏لدى <ns1:g id="APP_NAME">%1$s</ns1:g> مشكلة في خدمات Google Play. يُرجى إعادة المحاولة."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play التي لا يوفرها جهازك."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"تحديث"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> ما لم يتم تحديث خدمات Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"‏تحديث خدمات Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"‏لن يتم تشغيل <ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play، والتي يتم تحديثها حاليًا."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"‏يجب توفر إصدار جديد من خدمات Google Play. سيتم تحديثها تلقائيًا قريبًا."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"فتح على الهاتف"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"تسجل الدخول"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"‏تسجيل الدخول عبر Google"</string>
+    <string name="company"> شركة </string>
+    <string name="contact_no"> رقم المحمول </string>
+    <string name="continue_guest">متابعة كضيف</string>
+    <string name="continue_shopping"> مواصلة التسوق </string>
+    <string name="country"> بلد </string>
+    <string name="coupon"> القسيمة </string>
+    <string name="coupon_amount"> قيمة القسيمة </string>
+    <string name="coupon_applied"> القسيمة المطبقة بالفعل! </string>
+    <string name="coupon_cannot_be_applied"> لا يمكن تطبيق القسيمة! </string>
+    <string name="coupon_cannot_used_with_existing"> القسيمة لا يمكن استخدامها مع القسيمة القائمة! </string>
+    <string name="coupon_code"> رمز القسيمة </string>
+    <string name="coupon_discount"> قيمة خصم </string>
+    <string name="coupon_expired"> انتهت صلاحية القسيمة! </string>
+    <string name="coupon_is_not_for_excluded_categories"> لا يمكن استخدام القسيمة على الفئات المستبعدة! </string>
+    <string name="coupon_is_not_for_excluded_products"> لا يمكن استخدام القسيمة على المنتجات المستبعدة! </string>
+    <string name="coupon_is_not_for_sale_items"> القسيمة لا يمكن استخدامها على بيع البنود! </string>
+    <string name="coupon_is_not_for_these_categories"> القسيمة غير صالحة لهذه الفئة من المنتجات! </string>
+    <string name="coupon_is_not_for_these_products"> القسيمة غير صالحة لهذه المنتجات! </string>
+    <string name="coupon_is_not_for_too_many_products"> القسيمة لا يمكن استخدامها على الكثير من المنتجات! </string>
+    <string name="coupon_is_not_for_you"> أنت لا تنطبق على استخدام هذه القسيمة! </string>
+    <string name="coupon_max_amount_is_less_than_order_total"> العربة مجموع لا يلبي الحد الأقصى للمبلغ القسيمة! </string>
+    <string name="coupon_min_amount_is_greater_than_order_total"> العربة مجموع لا يلبي الحد الأدنى لمبلغ القسيمة! </string>
+    <string name="coupon_removes_other_coupons"> هذه القسيمة قد إزالة جميع القسائم الأخرى! </string>
+    <string name="coupon_type"> نوع القسيمة </string>
+    <string name="coupon_used_by_all"> وقد تم استخدام القسيمة من قبل المستخدمين محدودة! </string>
+    <string name="coupon_used_by_you"> لقد سبق لك استخدام هذه القسيمة! </string>
+    <string name="date"> تاريخ </string>
+    <string name="default_shipping"> عنوان الشحن الافتراضي </string>
+    <string name="description"> الوصف </string>
+    <string name="discount"> خصم </string>
+    <string name="drawerClose">DrawerClose</string>
+    <string name="drawerOpen">DrawerOpen</string>
+    <string name="edit_profile"> تعديل الملف الشخصي </string>
+    <string name="email"> البريد الإلكتروني </string>
+    <string name="email_address"> عنوان البريد الإلكتروني </string>
+    <string name="empty_cart"> عربة التسوق فارغة </string>
+    <string name="enter_city"> أدخل مدينتك </string>
+    <string name="enter_message"> أدخل رسالتك </string>
+    <string name="enter_name"> أدخل أسمك </string>
+    <string name="explore"> إستكشاف </string>
+    <string name="facebook_login"> تسجيل الدخول الى الفيسبوك </string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"متنوعة"</string>
+    <string name="featured"> متميز </string>
+    <string name="first_name"> الاسم الاول </string>
+    <string name="forgot_password"> لقد نسيت كلمة السر؟ </string>
+    <string name="forgot_your_password"> نسيت رقمك السري؟ </string>
+    <string name="full_name"> الاسم الكامل </string>
+    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"متنوعة"</string>
+    <string name="google_login"> تسجيل الدخول إلى گوگل </string>
+    <string name="grant"> منحة </string>
+    <string name="homeStyle1"> الصفحة الرئيسية 1 </string>
+    <string name="homeStyle2"> الصفحة الرئيسية 2 </string>
+    <string name="homeStyle3"> الصفحة الرئيسية 3 </string>
+    <string name="homeStyle4"> الصفحة الرئيسية 4 </string>
+    <string name="homeStyle5"> الصفحة الرئيسية 5 </string>
+    <string name="in_stock"> في المخزن </string>
+    <string name="invalid_address"> عنوان خاطئ </string>
+    <string name="invalid_company">شركة غير صالحة</string>
+    <string name="invalid_contact"> رقم جهة الاتصال غير الصالحة </string>
+    <string name="invalid_coupon"> الكوبون غير صالح </string>
+    <string name="invalid_email"> عنوان البريد الإلكتروني غير صالح </string>
+    <string name="invalid_first_name"> الاسم الأول غير صالح </string>
+    <string name="invalid_last_name"> الاسم الأخير غير صالح </string>
+    <string name="invalid_name">اسم غير صالح</string>
+    <string name="invalid_password"> رمز مرور خاطئ </string>
+    <string name="invalid_post_code"> الرمز البريدي غير صالح </string>
+    <string name="item_added_to_cart"> تمت إضافة العنصر إلى سلة التسوق </string>
+    <string name="last_name"> الكنية </string>
+    <string name="local_notification"> الإخطارات المحلية </string>
+    <string name="login"> تسجيل الدخول </string>
+    <string name="login_or_create_account"> الرجاء تسجيل الدخول أو إنشاء حساب </string>
+    <string name="login_or_signup"> تسجيل الدخول والتسجيل </string>
+    <string name="lorem_ipsum">
+        يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى.
+        يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى.
+        يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى.
+        يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى.
+    </string>
+    <string name="mobile"> التليفون المحمول </string>
+    <string name="new_password"> كلمة السر الجديدة </string>
+    <string name="newest"> جديد </string>
+    <string name="news_all"> جميع الأخبار </string>
+    <string name="news_categories"> فئات الأخبار </string>
+    <string name="news_description"> وصف الأخبار </string>
+    <string name="next"> التالى </string>
+    <string name="no_internet"> لا يوجد اتصال إنترنت </string>
+    <string name="no_of_products"> عدد المنتجات </string>
+    <string name="not_a_member"> ليس عضوا؟ </string>
+    <string name="not_now"> ليس الان </string>
+    <string name="official_web"> الموقع الرسمي </string>
+    <string name="ok"> حسنا </string>
+    <string name="order_cancelled"> تم إلغاء الطلب بنجاح. </string>
+    <string name="order_confirmed"> تم تاكيد الطلب </string>
+    <string name="order_date"> تاريخ الطلب </string>
+    <string name="order_details"> تفاصيل الطلب </string>
+    <string name="order_id"> رقم الطلب </string>
+    <string name="order_notes"> ملاحظات الطلب </string>
+    <string name="order_placed">أجل وضعت بنجاح.</string>
+    <string name="order_status"> حالة الطلب </string>
+    <string name="outOfStock"> إنتهى من المخزن </string>
+    <string name="password"> كلمه السر </string>
+    <string name="payment_method"> طريقة الدفع او السداد </string>
+    <string name="permission_camera_storage"> Need Camera and Storage Permissions! </string>
+    <string name="permission_camera_storage_needed"> This app needs camera and storage permissions to take pictures from the gallery or with the camera. </string>
+    <string name="permission_rejected"> Permission not Granted! </string>
+    <string name="post_code"> الرمز البريدي </string>
+    <string name="privacy_policy"> سياسة الخصوصية </string>
+    <string name="product_description"> وصف المنتج </string>
+    <string name="product_price"> سعر المنتج </string>
+    <string name="product_title"> عنوان المنتج </string>
+    <string name="products"> منتجات </string>
+    <string name="push_notification"> دفع الإخطارات </string>
+    <string name="quantity"> كمية </string>
+    <string name="rate_app"> معدل التطبيق </string>
+    <string name="rate_app_msg"> إذا كنت تتمتع باستخدام هذا التطبيق، سيكون كبيرا أن نتوقف لحظة لمعدل. </string>
+    <string name="rate_now"> قيمه! </string>
+    <string name="rate_product">متابعة كضيف</string>
+    <string name="recentlyViewed"> شوهدت مؤخرا </string>
+    <string name="record_not_found"> لا يوجد سجلات </string>
+    <string name="refund_policy"> سياسة الاسترجاع </string>
+    <string name="register"> تسجيل </string>
+    <string name="related_products">منتجات ذات صله</string>
+    <string name="removeProduct"> إزالة المنتج </string>
+    <string name="removed_from_favourites"> تمت الإزالة من المفضلة </string>
+    <string name="reset_filters"> إعادة تعيين الفلاتر </string>
+    <string name="retry"> إعادة المحاولة </string>
+    <string name="reviews_ratings">متابعة كضيف</string>
+    <string msgid="368094699078615544" name="s1">"حفظ الصورة"</string>
+    <string msgid="4550830452390689489" name="s2">"هل تريد السماح للإعلان بتخزين الصورة في معرض الصور؟"</string>
+    <string msgid="2435407834265420668" name="s3">"قبول"</string>
+    <string msgid="9167523597401839819" name="s4">"رفض"</string>
+    <string msgid="1566682516266724847" name="s5">"إنشاء حدث تقويم"</string>
+    <string msgid="5996672174517137271" name="s6">"هل تريد السماح للإعلان بإنشاء حدث تقويم؟"</string>
+    <string msgid="7163549807207034258" name="s7">"إعلان تجريبي"</string>
+    <string name="sample_coupons"> عينة رموز القسيمة </string>
+    <string name="save"> حفظ </string>
+    <string name="save_address"> حفظ العنوان </string>
+    <string name="save_changes"> حفظ التغييرات </string>
+    <string name="search"> تفتيش </string>
+    <string msgid="146198913615257606" name="search_menu_title">"البحث"</string>
+    <string name="search_product_by_name"> اكتب شيئا ما للبحث </string>
+    <string name="select_country"> اختر بلدك </string>
+    <string name="select_language"> اختار اللغة </string>
+    <string name="select_zone"> حدد منطقتك </string>
+    <string name="send"> إرسال </string>
+    <string name="service_terms"> شروط الخدمة </string>
+    <string name="share_app"> شارك التطبيق </string>
+    <string name="shipping"> الشحن </string>
+    <string name="shipping_address"> عنوان الشحن </string>
+    <string name="shipping_method"> طريقة الشحن </string>
+    <string name="signup"> سجل </string>
+    <string name="slide_1_desc"> يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى. </string>
+    <string name="slide_1_title"> الصفحة الرئيسية </string>
+    <string name="slide_2_desc"> يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى. </string>
+    <string name="slide_2_title"> صفحة الفئة </string>
+    <string name="slide_3_desc"> يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى. </string>
+    <string name="slide_3_title"> صفحة التسوق </string>
+    <string name="slide_4_desc"> يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى. </string>
+    <string name="slide_4_title"> صفحة العربة </string>
+    <string name="slide_5_desc"> يعبأ الباهضة وبلجيكا، شيء تم. أن وسوء الخاسرة والمعدات لمّ. كل عشوائية ومطالبة التغييرات حدى. </string>
+    <string name="slide_5_title"> صفحة الطلب </string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="subtotal"> حاصل الجمع </string>
+    <string name="super_deals"> صفقات </string>
+    <string name="tax"> ضريبة </string>
+    <string name="thank_you"> شكرا </string>
+    <string name="thank_you_for_shopping"> شكرا للتسوق معنا! </string>
+    <string name="title"> عنوان </string>
+    <string name="total"> مجموع </string>
+    <string name="total_price"> السعر الكلي </string>
+    <string name="unexpected_response"> استجابة خادم غير متوقعة </string>
+    <string name="username">اسم المستخدم</string>
+    <string name="view"> رأي </string>
+    <string name="view_product"> عرض المنتج </string>
+    <string name="welcome"> مرحبا </string>
+    <string name="your_message"> رسالتك </string>
+    <string name="zone"> منطقة </string>
+</resources>
