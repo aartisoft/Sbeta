@@ -106,13 +106,13 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     SliderLayout sliderLayout;
     PagerIndicator pagerIndicator;
     ToggleButton product_like_btn;
-    ColorRatingBar product_rating_bar;
+  //  ColorRatingBar product_rating_bar;
     ListView attributes_list_view;
     WebView product_description_webView, product_price_webView;
     ImageButton product_share_btn, product_quantity_plusBtn, product_quantity_minusBtn;
     RecyclerView grouped_products_recycler, product_metadata_recycler, related_products_recycler;
-    TextView title, category, product_ratings_count, product_stock, product_total_price, product_tag_new, product_tag_sale, product_tag_featured, product_item_quantity;
-    LinearLayout product_reviews_ratings, product_attributes, simple_product, grouped_products, product_metadata, related_products, product_description;
+    TextView title, category,  product_stock, product_total_price, product_tag_new, product_tag_sale, product_tag_featured, product_item_quantity;
+    LinearLayout   product_attributes, simple_product, grouped_products, product_metadata, related_products, product_description;
     
     public DialogLoader dialogLoader;
     public ProductDetails productDetails;
@@ -128,7 +128,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     List<ProductDetails> groupedProductsList;
     List<ProductDetails> allProductVariationsList;
     
-    public List<ProductReviews> productReviews;
+    //public List<ProductReviews> productReviews;
     public List<ProductDetails> variationsList;
     public List<ProductAttributes> productAttributesList;
     public LinkedList<ProductAttributes> attributesList;
@@ -162,7 +162,9 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
         product_tag_sale = (TextView) rootView.findViewById(R.id.product_tag_sale);
         product_tag_featured = (TextView) rootView.findViewById(R.id.product_tag_featured);
         product_item_quantity = (TextView) rootView.findViewById(R.id.product_item_quantity);
+/*
         product_ratings_count = (TextView) rootView.findViewById(R.id.product_ratings_count);
+*/
         product_like_btn = (ToggleButton) rootView.findViewById(R.id.product_like_btn);
         product_share_btn = (ImageButton) rootView.findViewById(R.id.product_share_btn);
         product_quantity_plusBtn = (ImageButton) rootView.findViewById(R.id.product_item_quantity_plusBtn);
@@ -173,8 +175,10 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
         product_metadata = (LinearLayout) rootView.findViewById(R.id.product_metadata);
         product_attributes = (LinearLayout) rootView.findViewById(R.id.product_attributes);
         product_description = (LinearLayout) rootView.findViewById(R.id.product_description);
-        product_reviews_ratings = (LinearLayout) rootView.findViewById(R.id.product_reviews_ratings);
+       // product_reviews_ratings = (LinearLayout) rootView.findViewById(R.id.product_reviews_ratings);
+/*
         product_rating_bar = (ColorRatingBar ) rootView.findViewById(R.id.product_rating_bar);
+*/
         sliderLayout = (SliderLayout) rootView.findViewById(R.id.product_cover_slider);
         pagerIndicator = (PagerIndicator) rootView.findViewById(R.id.product_slider_indicator);
         product_price_webView = (WebView) rootView.findViewById(R.id.product_price_webView);
@@ -201,7 +205,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
         dialogLoader = new DialogLoader(getContext());
     
         productIDsList = new ArrayList<>();
-        productReviews = new ArrayList<>();
+      //  productReviews = new ArrayList<>();
         relatedProductsList = new ArrayList<>();
         groupedProductsList = new ArrayList<>();
         allProductVariationsList = new ArrayList<>();
@@ -241,7 +245,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
         
         productDetails = product;
     
-        getProductReviews(String.valueOf(productDetails.getId()));
+      //  getProductReviews(String.valueOf(productDetails.getId()));
         
         
         // Check Product's Type
@@ -445,12 +449,14 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     
     
     
+/*
         product_ratings_count.setText(String.valueOf(productDetails.getRatingCount()));
-    
-        if (productDetails.getAverageRating() != null  &&  !TextUtils.isEmpty(productDetails.getAverageRating())) {
+*/
+
+        /*if (productDetails.getAverageRating() != null  &&  !TextUtils.isEmpty(productDetails.getAverageRating())) {
             product_rating_bar.setRating(Float.parseFloat(productDetails.getAverageRating()));
         }
-        
+        */
         
         // Check if the Product is Newly Added with the help of static method of Helper class
         if (Utilities.checkNewProduct(productDetails.getDateCreated())) {
@@ -577,13 +583,13 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                                 getContext(),
                                 productDetails.getName(),
                                 sliderImageView,
-                                productDetails.getPermalink()
+                                productDetails.getDescription()
                         );
             }
         });
         
         
-        if (favorites_db.getUserFavorites().contains(productDetails.getId())) {
+        /*if (favorites_db.getUserFavorites().contains(productDetails.getId())) {
             productDetails.setIsLiked("1");
             product_like_btn.setChecked(true);
         }
@@ -591,47 +597,47 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
             productDetails.setIsLiked("0");
             product_like_btn.setChecked(false);
         }
-        
-        
+        */
+
         // Handle Click event of product_like_btn Button
-        product_like_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                
-                // Check if the User has Checked the Like Button
-                if(product_like_btn.isChecked()) {
-                    productDetails.setIsLiked("1");
-                    product_like_btn.setChecked(true);
-                    
-                    // Add the Product to User's Favorites
-                    if (!favorites_db.getUserFavorites().contains(productDetails.getId())) {
-                        favorites_db.insertFavoriteItem(productDetails.getId());
-                    }
-    
-                    Snackbar.make(view, getContext().getString(R.string.added_to_favourites), Snackbar.LENGTH_SHORT).show();
-                
-                } else {
-                    productDetails.setIsLiked("0");
-                    product_like_btn.setChecked(false);
-                    
-                    // Remove the Product from User's Favorites
-                    if (favorites_db.getUserFavorites().contains(productDetails.getId())) {
-                        favorites_db.deleteFavoriteItem(productDetails.getId());
-                    }
-    
-                    Snackbar.make(view, getContext().getString(R.string.removed_from_favourites), Snackbar.LENGTH_SHORT).show();
-                }
-            }
-        });
-    
-    
-        // Handle Click event of product_reviews_ratings Button
-        product_reviews_ratings.setOnClickListener(new View.OnClickListener() {
+//        product_like_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//               /* // Check if the User has Checked the Like Button
+//                if(product_like_btn.isChecked()) {
+//                    productDetails.setIsLiked("1");
+//                    product_like_btn.setChecked(true);
+//
+//                    // Add the Product to User's Favorites
+//                    if (!favorites_db.getUserFavorites().contains(productDetails.getId())) {
+//                        favorites_db.insertFavoriteItem(productDetails.getId());
+//                    }
+//
+//                    Snackbar.make(view, getContext().getString(R.string.added_to_favourites), Snackbar.LENGTH_SHORT).show();
+//
+//                } else {
+//                    productDetails.setIsLiked("0");
+//                    product_like_btn.setChecked(false);
+//
+//                    // Remove the Product from User's Favorites
+//                    if (favorites_db.getUserFavorites().contains(productDetails.getId())) {
+//                        favorites_db.deleteFavoriteItem(productDetails.getId());
+//                    }
+//
+//                    Snackbar.make(view, getContext().getString(R.string.removed_from_favourites), Snackbar.LENGTH_SHORT).show();
+//                }*/
+//            }
+//        });
+//
+//
+//        // Handle Click event of product_reviews_ratings Button
+    /*    product_reviews_ratings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showRatingsAndReviewsOfProduct();
             }
-        });
+        });*/
         
         
         // Handle Click event of productCartBtn Button
@@ -1447,6 +1453,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     
     //*********** Setup the ImageSlider with the given List of Product Images ********//
     
+/*
     public void showRatingsAndReviewsOfProduct() {
         
         int rating_1_count = 0;
@@ -1542,11 +1549,13 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     
         reviews_ratings_dialog.show();
     }
-    
+*/
+
     
     
     //*********** Setup the ImageSlider with the given List of Product Images ********//
     
+/*
     public void showRateProductDialog() {
         
         AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
@@ -1594,7 +1603,8 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     
         rateProductDialog.show();
     }
-    
+*/
+
     
     
     //*********** Setup the ImageSlider with the given List of Product Images ********//
@@ -1906,6 +1916,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     
     //*********** Proceed User Registration Request ********//
     
+/*
     private void getProductReviews(final String productID) {
         
         dialogLoader.showProgressDialog();
@@ -1940,11 +1951,13 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
             }
         });
     }
-    
+*/
+
     
     
     //*********** Proceed User Registration Request ********//
     
+/*
     private void getNonceForProductRating(final String productID, final String rate_star, final String a_name, final String a_email, final String a_message) {
         
         dialogLoader.showProgressDialog();
@@ -1974,7 +1987,8 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                     
                     if (!TextUtils.isEmpty(nonce)) {
                         
-                        CreateProductReview
+                       */
+/* CreateProductReview
                                 (
                                         nonce,
                                         productID,
@@ -1982,7 +1996,8 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                                         a_name,
                                         a_email,
                                         a_message
-                                );
+                                );*//*
+
                         
                     }
                     else {
@@ -2004,11 +2019,13 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
             }
         });
     }
-    
+*/
+
     
     
     //*********** Request Product Details from the Server based on productID ********//
     
+/*
     public void CreateProductReview(String nonce, String productID, String rate_star, String a_name, String a_email, String a_message) {
         
         Call<UserData> call = APIClient.getInstance()
@@ -2063,7 +2080,8 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
         });
         
     }
-    
+*/
+
     
     
     //*********** Request the Product's Details from the Server based on Product's ID ********//
