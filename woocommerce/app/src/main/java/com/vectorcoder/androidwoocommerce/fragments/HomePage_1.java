@@ -72,7 +72,7 @@ public class HomePage_1 extends Fragment implements BaseSliderView.OnSliderClick
         
     
         // Setup BannerSlider
-        setupBannerSlider(bannerImages);
+        //setupBannerSlider(bannerImages);
     
         // Setup ViewPagers
         setupViewPagerOne(viewPager);
