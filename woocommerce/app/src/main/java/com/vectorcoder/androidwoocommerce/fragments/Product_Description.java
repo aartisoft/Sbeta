@@ -90,18 +90,18 @@ import retrofit2.Response;
 
 
 public class Product_Description extends Fragment implements BaseSliderView.OnSliderClickListener {
-    
+
     View rootView;
     
     int productID;
     int selectedVariationID = 0;
     double productBasePrice = 0;
     double productFinalPrice = 0;
-    
+
     String customerID;
     String[] attributesNames;
-    
-    Button productCartBtn;
+
+    Button productCartBtn,productShareBtn2,productAskBtn;
     ImageView sliderImageView;
     SliderLayout sliderLayout;
     PagerIndicator pagerIndicator;
@@ -154,6 +154,10 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
     
         // Binding Layout Views
         productCartBtn = (Button) rootView.findViewById(R.id.product_cart_btn);
+        productAskBtn = (Button) rootView.findViewById(R.id.product_ask_btn);
+
+        productShareBtn2 = (Button) rootView.findViewById(R.id.product_share_btn2);
+
         title = (TextView) rootView.findViewById(R.id.product_title);
         category = (TextView) rootView.findViewById(R.id.product_category);
         product_stock = (TextView) rootView.findViewById(R.id.product_stock);
@@ -587,8 +591,36 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                         );
             }
         });
-        
-        
+
+        // Handle Click event of productShareBtn2 Button
+        productShareBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Share Product with the help of static method of Helper class
+                Utilities.shareProduct
+                        (
+                                getContext(),
+                                productDetails.getName(),
+                                sliderImageView,
+                                productDetails.getDescription()
+                        );
+            }
+        });
+
+        // Handle Click event of productAskBtn2 Button
+        productAskBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Share Product with the help of static method of Helper class
+                Utilities.askWhatsApp
+                        (
+                                getContext(),
+                                productDetails.getExternalUrl()
+                        );
+            }
+        });
+
+
         /*if (favorites_db.getUserFavorites().contains(productDetails.getId())) {
             productDetails.setIsLiked("1");
             product_like_btn.setChecked(true);
@@ -786,8 +818,8 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
         });
         
     }
-    
-    
+
+
     
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {

@@ -57,7 +57,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     private Boolean isHorizontal;
     
     private User_Recents_DB recents_db;
-    private User_Favorites_DB favorites_db;
+    //private User_Favorites_DB favorites_db;
     private List<ProductDetails> productList;
 
 
@@ -67,7 +67,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         this.isHorizontal = isHorizontal;
 
         recents_db = new User_Recents_DB();
-        favorites_db = new User_Favorites_DB();
+        //favorites_db = new User_Favorites_DB();
     }
 
 
@@ -193,44 +193,44 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     
     
     
-            holder.product_like_btn.setOnCheckedChangeListener(null);
+//            holder.product_like_btn.setOnCheckedChangeListener(null);
     
-            if (favorites_db.getUserFavorites().contains(product.getId())) {
-                product.setIsLiked("1");
-                holder.product_like_btn.setChecked(true);
-            }
-            else {
-                product.setIsLiked("0");
-                holder.product_like_btn.setChecked(false);
-            }
+//            if (favorites_db.getUserFavorites().contains(product.getId())) {
+//                product.setIsLiked("1");
+//                holder.product_like_btn.setChecked(true);
+//            }
+//            else {
+//                product.setIsLiked("0");
+//                holder.product_like_btn.setChecked(false);
+//            }
+//
     
-    
-            // Handle the Click event of product_like_btn ToggleButton
-            holder.product_like_btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-    
-                    if(holder.product_like_btn.isChecked()) {
-                        product.setIsLiked("1");
-                        holder.product_like_btn.setChecked(true);
-        
-                        // Add the Product to User's Favorites
-                        if (!favorites_db.getUserFavorites().contains(product.getId())) {
-                            favorites_db.insertFavoriteItem(product.getId());
-                        }
-                    }
-                    else {
-                        product.setIsLiked("0");
-                        holder.product_like_btn.setChecked(false);
-        
-                        // Remove the Product from User's Favorites
-                        if (favorites_db.getUserFavorites().contains(product.getId())) {
-                            favorites_db.deleteFavoriteItem(product.getId());
-                        }
-                    }
-                }
-            });
-    
+//            // Handle the Click event of product_like_btn ToggleButton
+//            holder.product_like_btn.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//
+//                    if(holder.product_like_btn.isChecked()) {
+//                        product.setIsLiked("1");
+//                        holder.product_like_btn.setChecked(true);
+//
+//                        // Add the Product to User's Favorites
+//                        if (!favorites_db.getUserFavorites().contains(product.getId())) {
+//                            favorites_db.insertFavoriteItem(product.getId());
+//                        }
+//                    }
+//                    else {
+//                        product.setIsLiked("0");
+//                        holder.product_like_btn.setChecked(false);
+//
+//                        // Remove the Product from User's Favorites
+//                        if (favorites_db.getUserFavorites().contains(product.getId())) {
+//                            favorites_db.deleteFavoriteItem(product.getId());
+//                        }
+//                    }
+//                }
+//            });
+//
     
             
             holder.product_title.setOnClickListener(new View.OnClickListener() {
@@ -364,7 +364,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         ProgressBar cover_loader;
         Button product_add_cart_btn;
         WebView product_price_webView;
-        ToggleButton product_like_btn;
+       // ToggleButton product_like_btn;
         ImageView product_cover, product_checked, product_tag_new;
         TextView product_title, product_tag_sale, product_tag_featured;
 
@@ -380,7 +380,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
             product_tag_sale = (TextView) itemView.findViewById(R.id.product_tag_sale);
             product_tag_featured = (TextView) itemView.findViewById(R.id.product_tag_featured);
             product_add_cart_btn = (Button) itemView.findViewById(R.id.product_card_Btn);
-            product_like_btn = (ToggleButton) itemView.findViewById(R.id.product_like_btn);
+            //product_like_btn = (ToggleButton) itemView.findViewById(R.id.product_like_btn);
             product_price_webView = (WebView) itemView.findViewById(R.id.product_price_webView);
         }
         

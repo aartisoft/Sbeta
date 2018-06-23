@@ -48,6 +48,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
@@ -61,6 +62,8 @@ import java.util.concurrent.TimeUnit;
 import com.vectorcoder.androidwoocommerce.app.App;
 import com.vectorcoder.androidwoocommerce.constant.ConstantValues;
 import com.vectorcoder.androidwoocommerce.models.device_model.DeviceInfo;
+
+import org.jsoup.Jsoup;
 
 import static android.content.Context.LOCATION_SERVICE;
 import static com.facebook.FacebookSdk.getApplicationContext;
@@ -461,7 +464,7 @@ public class Utilities {
             shareIntent.setFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
 
             shareIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
-            shareIntent.putExtra(Intent.EXTRA_TEXT, url);
+            shareIntent.putExtra(Intent.EXTRA_TEXT, Jsoup.parse(url).text());
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
 
             context.startActivity(Intent.createChooser(shareIntent, "Share via"));
@@ -471,6 +474,32 @@ public class Utilities {
         }
     }
 
+    public static void askWhatsApp(Context context, String url) {
+
+
+
+
+            String text = "Hi, I am interested in this  : "+ url;
+
+        String phone = "919818833358"; // E164 format without '+' sign
+
+        PackageManager packageManager = context.getPackageManager();
+        Intent i = new Intent(Intent.ACTION_VIEW);
+
+        try {
+            String whatsAppurl = "https://api.whatsapp.com/send?phone="+ phone +"&text=" + URLEncoder.encode(text, "UTF-8");
+            i.setPackage("com.whatsapp");
+            i.setData(Uri.parse(whatsAppurl));
+            if (i.resolveActivity(packageManager) != null) {
+                context.startActivity(i);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+
+    }
 
 
     //*********** Convert Bitmap into Uri ********//

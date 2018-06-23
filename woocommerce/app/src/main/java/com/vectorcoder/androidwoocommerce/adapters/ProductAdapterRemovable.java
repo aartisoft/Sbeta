@@ -52,7 +52,7 @@ public class ProductAdapterRemovable extends RecyclerView.Adapter<ProductAdapter
     private List<ProductDetails> productList;
 
     private User_Recents_DB recents_db;
-    private User_Favorites_DB favorites_db;
+    //private User_Favorites_DB favorites_db;
 
 
     public ProductAdapterRemovable(Context context, List<ProductDetails> productList, boolean isHorizontal, boolean isRecents, TextView emptyText) {
@@ -63,7 +63,7 @@ public class ProductAdapterRemovable extends RecyclerView.Adapter<ProductAdapter
         this.emptyText = emptyText;
 
         recents_db = new User_Recents_DB();
-        favorites_db = new User_Favorites_DB();
+        //favorites_db = new User_Favorites_DB();
     }
 
 
@@ -196,10 +196,10 @@ public class ProductAdapterRemovable extends RecyclerView.Adapter<ProductAdapter
                 
                 } else {
                     // Remove the Product from User's Favorites
-                    if (favorites_db.getUserFavorites().contains(product.getId())) {
+                    /*if (favorites_db.getUserFavorites().contains(product.getId())) {
                         favorites_db.deleteFavoriteItem(product.getId());
                     }
-                }
+               */ }
             
                 // Remove Product from productList List
                 productList.remove(holder.getAdapterPosition());
@@ -284,7 +284,7 @@ public class ProductAdapterRemovable extends RecyclerView.Adapter<ProductAdapter
         ProgressBar cover_loader;
         Button product_remove_btn;
         WebView product_price_webView;
-        ToggleButton product_like_btn;
+       // ToggleButton product_like_btn;
         ImageView product_cover, product_checked, product_tag_new;
         TextView product_title, product_tag_sale, product_tag_featured;
 
@@ -302,10 +302,10 @@ public class ProductAdapterRemovable extends RecyclerView.Adapter<ProductAdapter
             product_tag_sale = (TextView) itemView.findViewById(R.id.product_tag_sale);
             product_tag_featured = (TextView) itemView.findViewById(R.id.product_tag_featured);
             product_remove_btn = (Button) itemView.findViewById(R.id.product_card_Btn);
-            product_like_btn = (ToggleButton) itemView.findViewById(R.id.product_like_btn);
+            //product_like_btn = (ToggleButton) itemView.findViewById(R.id.product_like_btn);
             product_price_webView = (WebView) itemView.findViewById(R.id.product_price_webView);
 
-            product_like_btn.setVisibility(View.GONE);
+            //product_like_btn.setVisibility(View.GONE);
             product_remove_btn.setText(context.getString(R.string.removeProduct));
             product_remove_btn.setBackground(ContextCompat.getDrawable(context, R.drawable.rounded_corners_button_red));
         }
