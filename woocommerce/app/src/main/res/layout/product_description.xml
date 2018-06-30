@@ -140,6 +140,7 @@
                             android:layout_centerVertical="true"
                             android:layout_alignParentStart="true"/>
 
+<!--
                         <TextView
                             android:id="@+id/product_stock"
                             android:layout_width="wrap_content"
@@ -150,6 +151,7 @@
                             android:textColor="@color/colorAccentBlue"
                             android:layout_centerVertical="true"
                             android:layout_alignParentEnd="true"/>
+-->
 
                     </RelativeLayout>
 
@@ -234,6 +236,80 @@
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
                 android:background="@color/windowBackground">
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/grouped_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/windowBackground">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dividerLight"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/grouped_products_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/product_attributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dividerLight"/>
+                <com.vectorcoder.androidwoocommerce.customs.CustomListView
+                    android:id="@+id/attributes_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:dividerHeight="5dp"
+                    android:divider="@android:color/transparent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dividerLight"/>
+<!--                <TextView
+                    android:id="@+id/product_description_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/description"
+                    android:textSize="16sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/textColorSecondaryDark"/>-->
+                <WebView
+                    android:id="@+id/product_description_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp" />
 
                 <View
                     android:layout_width="match_parent"
@@ -322,79 +398,6 @@
 
                 </RelativeLayout>
 
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/grouped_products"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@color/windowBackground">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/dividerLight"/>
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/grouped_products_recycler"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/product_attributes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/dividerLight"/>
-                <com.vectorcoder.androidwoocommerce.customs.CustomListView
-                    android:id="@+id/attributes_list_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbars="none"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="20dp"
-                    android:paddingStart="20dp"
-                    android:dividerHeight="5dp"
-                    android:divider="@android:color/transparent" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/product_description"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/dividerLight"/>
-                <TextView
-                    android:id="@+id/product_description_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginStart="20dp"
-                    android:text="@string/description"
-                    android:textSize="16sp"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/textColorSecondaryDark"/>
-                <WebView
-                    android:id="@+id/product_description_webView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginStart="20dp" />
 
             </LinearLayout>
 
@@ -481,7 +484,7 @@
             android:id="@+id/product_ask_btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="AskUs"
+            android:text="Ask Us"
             android:textAllCaps="true"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"

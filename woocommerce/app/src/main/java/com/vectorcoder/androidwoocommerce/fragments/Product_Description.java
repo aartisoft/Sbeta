@@ -402,7 +402,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
             product_attributes.setVisibility(View.GONE);
     
             // Check if the Product is Out of Stock
-            if (!productDetails.isInStock()) {
+            /*if (!productDetails.isInStock()) {
                 simple_product.setVisibility(View.GONE);
                 product_stock.setText(getString(R.string.outOfStock));
                 product_stock.setTextColor(ContextCompat.getColor(getContext(), R.color.colorAccentRed));
@@ -415,7 +415,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                 product_stock.setTextColor(ContextCompat.getColor(getContext(), R.color.colorAccentBlue));
                 productCartBtn.setText(getString(R.string.addToCart));
                 productCartBtn.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_corners_button_accent));
-            }
+            }*/
             
         }
         
@@ -586,6 +586,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                         (
                                 getContext(),
                                 productDetails.getName(),
+                                productDetails.getPrice(),
                                 sliderImageView,
                                 productDetails.getDescription()
                         );
@@ -601,6 +602,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                         (
                                 getContext(),
                                 productDetails.getName(),
+                                productDetails.getPrice(),
                                 sliderImageView,
                                 productDetails.getDescription()
                         );
@@ -615,7 +617,7 @@ public class Product_Description extends Fragment implements BaseSliderView.OnSl
                 Utilities.askWhatsApp
                         (
                                 getContext(),
-                                productDetails.getExternalUrl()
+                                productDetails.getPermalink()
                         );
             }
         });

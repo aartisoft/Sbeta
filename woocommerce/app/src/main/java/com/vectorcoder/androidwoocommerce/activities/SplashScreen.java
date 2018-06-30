@@ -222,16 +222,16 @@ public class SplashScreen extends Activity {
                 setAppConfig();
 
                 
-                if (myAppPrefsManager.isFirstTimeLaunch()) {
+            /*    if (myAppPrefsManager.isFirstTimeLaunch()) {
                     // Navigate to IntroScreen
                     startActivity(new Intent(getBaseContext(), IntroScreen.class));
                     finish();
                 }
                 else {
-                    // Navigate to MainActivity
+            */        // Navigate to MainActivity
                     startActivity(new Intent(getBaseContext(), MainActivity.class));
                     finish();
-                }
+               // }
             }
         }
 

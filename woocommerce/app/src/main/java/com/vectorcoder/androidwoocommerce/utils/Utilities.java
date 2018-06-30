@@ -452,7 +452,7 @@ public class Utilities {
 
     //*********** Shares the Product with its Image and Url ********//
 
-    public static void shareProduct(Context context, String subject, ImageView imageView, String url) {
+    public static void shareProduct(Context context, String name,String price, ImageView imageView, String description) {
 
         Uri bmpUri = getLocalBitmapUri(context, imageView);
 
@@ -464,8 +464,8 @@ public class Utilities {
             shareIntent.setFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
 
             shareIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
-            shareIntent.putExtra(Intent.EXTRA_TEXT, Jsoup.parse(url).text());
-            shareIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Price: "+price+" | " + name+" | \n"+ Jsoup.parse(description).text());
+           // shareIntent.putExtra(Intent.EXTRA_SUBJECT, );
 
             context.startActivity(Intent.createChooser(shareIntent, "Share via"));
 
@@ -481,12 +481,16 @@ public class Utilities {
 
             String text = "Hi, I am interested in this  : "+ url;
 
-        String phone = "919818833358"; // E164 format without '+' sign
+            System.out.println("text============"+text);
+
+        String phone = "919560295937"; // E164 format without '+' sign
 
         PackageManager packageManager = context.getPackageManager();
         Intent i = new Intent(Intent.ACTION_VIEW);
 
         try {
+            System.out.println(" URLEncoder.encode(text============"+ URLEncoder.encode(text, "UTF-8"));
+
             String whatsAppurl = "https://api.whatsapp.com/send?phone="+ phone +"&text=" + URLEncoder.encode(text, "UTF-8");
             i.setPackage("com.whatsapp");
             i.setData(Uri.parse(whatsAppurl));

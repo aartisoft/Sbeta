@@ -70,6 +70,8 @@ public class LocaleHelper extends ContextWrapper {
         if (appSettingsDetails != null) {
             ConstantValues.DEFAULT_HOME_STYLE = context.getString(R.string.actionHome) +" "+ appSettingsDetails.getHomeStyle();
             ConstantValues.DEFAULT_CATEGORY_STYLE = context.getString(R.string.actionCategory) +" "+ appSettingsDetails.getCategoryStyle();
+            System.out.println("\n\n\nConstantValues.DEFAULT_HOME_STYLE======================="+ConstantValues.DEFAULT_HOME_STYLE);
+
         }
         else {
             ConstantValues.DEFAULT_HOME_STYLE = context.getString(R.string.actionHome) +" "+ 1;

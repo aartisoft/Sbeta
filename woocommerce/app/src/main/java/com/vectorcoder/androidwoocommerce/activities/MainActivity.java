@@ -329,7 +329,7 @@ public class MainActivity extends AppCompatActivity {
             
             listDataHeader.add(new Drawer_Items(R.drawable.ic_home, getString(R.string.actionHome)));
             listDataHeader.add(new Drawer_Items(R.drawable.ic_categories, getString(R.string.actionCategories)));
-            listDataHeader.add(new Drawer_Items(R.drawable.ic_cart, getString(R.string.actionShop)));
+          //listDataHeader.add(new Drawer_Items(R.drawable.ic_cart, getString(R.string.actionShop)));
             
             if ("1".equalsIgnoreCase(appSettings.getEditProfilePage()))
                 listDataHeader.add(new Drawer_Items(R.drawable.ic_account, getString(R.string.actionAccount)));
@@ -337,7 +337,7 @@ public class MainActivity extends AppCompatActivity {
                 listDataHeader.add(new Drawer_Items(R.drawable.ic_order, getString(R.string.actionOrders)));
             if ("1".equalsIgnoreCase(appSettings.getWishListPage()))
                 listDataHeader.add(new Drawer_Items(R.drawable.ic_favorite, getString(R.string.actionFavourites)));
-            if ("1".equalsIgnoreCase(appSettings.getIntroPage()))
+            if ("0".equalsIgnoreCase(appSettings.getIntroPage()))
                 listDataHeader.add(new Drawer_Items(R.drawable.ic_intro, getString(R.string.actionIntro)));
             if ("1".equalsIgnoreCase(appSettings.getNewsPage()))
                 listDataHeader.add(new Drawer_Items(R.drawable.ic_newspaper, getString(R.string.actionNews)));
@@ -393,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
             
             listDataHeader.add(new Drawer_Items(R.drawable.ic_home, getString(R.string.actionHome)));
             listDataHeader.add(new Drawer_Items(R.drawable.ic_categories, getString(R.string.actionCategories)));
-            listDataHeader.add(new Drawer_Items(R.drawable.ic_cart, getString(R.string.actionShop)));
+           //istDataHeader.add(new Drawer_Items(R.drawable.ic_cart, getString(R.string.actionShop)));
             listDataHeader.add(new Drawer_Items(R.drawable.ic_account, getString(R.string.actionAccount)));
             listDataHeader.add(new Drawer_Items(R.drawable.ic_order, getString(R.string.actionOrders)));
             listDataHeader.add(new Drawer_Items(R.drawable.ic_favorite, getString(R.string.actionFavourites)));
@@ -524,7 +524,25 @@ public class MainActivity extends AppCompatActivity {
         
         }
         else if(selectedItem.equalsIgnoreCase(getString(R.string.homeStyle1))) {
+
+
             mSelectedItem = selectedItem;
+
+            Bundle bundle = new Bundle();
+            bundle.putString("sortBy", "date");
+            bundle.putBoolean("isMenuItem", true);
+
+            // Navigate to Products Fragment
+            fragment = new Products();
+            fragment.setArguments(bundle);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.main_fragment, fragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(getString(R.string.actionHome)).commit();
+
+            drawerLayout.closeDrawers();
+
+           /* mSelectedItem = selectedItem;
 
             // Navigate to HomePage1 Fragment
             fragment = new HomePage_1();
@@ -534,7 +552,7 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
 
             drawerLayout.closeDrawers();
-
+*/
         }
         else if(selectedItem.equalsIgnoreCase(getString(R.string.homeStyle2))) {
             mSelectedItem = selectedItem;

@@ -126,7 +126,7 @@ public class HomePage_1 extends Fragment implements BaseSliderView.OnSliderClick
         
         // Add the Fragments to the ViewPagerAdapter with TabHeader
         viewPagerCustomAdapter.addFragment(productsNewest, getString(R.string.newest));
-        viewPagerCustomAdapter.addFragment(productsOnSale, getString(R.string.super_deals));
+      //  viewPagerCustomAdapter.addFragment(productsOnSale, getString(R.string.super_deals));
         viewPagerCustomAdapter.addFragment(productsFeatured, getString(R.string.featured));
 
         

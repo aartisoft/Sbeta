@@ -450,7 +450,7 @@ public class AppSettingsDetails {
     }
     
     public void setHomeStyle(String homeStyle) {
-        this.homeStyle = homeStyle;
+        this.homeStyle = "shop";
     }
     
     public String getWishListPage() {
